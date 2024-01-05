@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 class="integrity">
+        THE GRADING SYSTEM
+    </h1>
+    <div class="ZEBEDEE">
+<label for="mark">Enter Marks</label>
+<input class="solution" id="problem" type="number"> 
+<button class="human" onclick="headfirst()">
+ Click me
+    
+</button>
+
+<p class="xylem"            id="flower"></p>
+</div>
+
+</body>
+<script>
+function headfirst(){
+
+var pocket=document.getElementById("problem").value
+console.log(pocket)
+parseInt(pocket)
+if(pocket < 0){
+    console.log("the number you entered is invalid")
+    document.getElementById("flower").innerHTML="The number below 0 is invalid"
+}
+if (pocket > 100){
+    console.log("the number above 100 is invalid") 
+    document.getElementById("flower").innerHTML="This number above 100 is invalid"
+}
+if(pocket < 101 &&  pocket > 79){
+    console.log("the number is valid")
+    document.getElementById("flower").innerHTML="Your grade is A"
+}
+if(pocket > 60 && pocket < 79){
+    console.log("the number is valid")
+    document.getElementById("flower").innerHTML="Your grade is B"
+}
+if(pocket > 40 && pocket < 59 ){ 
+    console.log("the number is valid") 
+    document.getElementById("flower").innerHTML="Your grade is C"
+}
+if(pocket > 28 && pocket < 39){
+    console.log("the number is valid")
+    document.getElementById("flower").innerHTML="Your grade is D"
+}
+
+if(pocket >= 0 && pocket < 27){
+    console.log("the number is valid")
+    document.getElementById("flower").innerHTML="Your grade is F"
+}
+if(pocket == 100 ){
+    console.log("the number is valid")
+    document.getElementById("flower").innerHTML="Your grade is A+"
+}
+}
+</script>
+
+</html>

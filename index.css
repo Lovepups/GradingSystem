@@ -1,0 +1,34 @@
+.ZEBEDEE{
+background-color: hotpink;
+color:blue;
+height:250px;
+width:700px;
+border-radius:20px;
+margin: auto;
+padding:30px;
+padding-top:100px;
+font-size: xx-large;
+}
+.integrity{
+text-align: center;
+align-items: center;
+}
+.solution{
+height:50px;
+border-radius:50px;
+margin: 5px;
+border-color: turquoise;
+padding:30px ;
+}
+.human{
+background-color: darkblue;
+color: violet;
+height: 150px;
+width: 150px;
+font-size: xx-large;
+padding: 30px;
+border-radius: 100px;
+
+margin-bottom: auto;
+border-color: black;
+}
